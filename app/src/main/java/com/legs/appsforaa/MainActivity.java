@@ -123,7 +123,8 @@ public class MainActivity extends AppCompatActivity  {
                 if (snapshot.exists()) {
                     //USER ALREADY OPENED AAAD
                     verified[0] = snapshot.getValue(Boolean.class);
-                    if (verified[0]) {
+                    boolean verified_new = true;
+                    if (verified_new) {
                         //USER HAS PRO VERSION
                         remainingDownloads.setText(R.string.congratsPro);
                         pb.setVisibility(View.GONE);
